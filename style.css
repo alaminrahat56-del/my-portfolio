@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Georgia, serif;
+    background-color: #fff8e7f;
+    color: #333;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #ff0000#0066cc;
+    text-align: center;
+    border-bottom: 3px solid #0066cc;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #009966;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #cc6600;
+}
+
+p {
+    font-size: 17px;
+}
+
+/* ছবি গোল বানানো */
+img {
+    border-radius: 50%;
+    border: 3px solid #0066cc;
+}
+
+/* লেখার মাঝে ফাঁক */
+p {
+    margin: 15px 0;
+}
+
+/* হেডিং আরো সুন্দর */
+h1 {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
