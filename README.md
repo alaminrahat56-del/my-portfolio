@@ -1,2 +1,2 @@
 # my-portfolio
-My first portfolio website - built with HTML &amp; CSS
+My first portfolio website - built with HTML & CSS
