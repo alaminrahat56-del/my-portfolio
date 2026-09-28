@@ -196,4 +196,107 @@ a:hover {
 .project-card a:hover {
     color: #009966;
     text-decoration: underline;
+}/* ==================== */
+/* ===== RESPONSIVE ==== */
+/* ==================== */
+
+/* Tablet এবং Mobile (768px এর নিচে) */
+@media (max-width: 768px) {
+    
+    /* ----- Nav Bar ----- */
+    .navbar {
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .logo {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    
+    .navbar nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .navbar nav ul li a {
+        font-size: 14px;
+    }
+    
+    /* ----- Sections ----- */
+    section {
+        padding: 20px 15px;
+    }
+    
+    /* ----- Headings ----- */
+    h2 {
+        font-size: 22px;
+    }
+    
+    /* ----- Skills Grid (১ কলাম) ----- */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    /* ----- Projects Grid (১ কলাম) ----- */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    /* ----- Profile Image ----- */
+    img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* ----- Paragraphs ----- */
+    p {
+        font-size: 15px;
+    }
+}
+
+/* Mobile (480px এর নিচে) */
+@media (max-width: 480px) {
+    
+    .navbar {
+        padding: 10px 12px;
+    }
+    
+    .logo {
+        font-size: 18px;
+    }
+    
+    .navbar nav ul {
+        gap: 8px;
+    }
+    
+    .navbar nav ul li a {
+        font-size: 13px;
+    }
+    
+    section {
+        padding: 15px 12px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .skill-card,
+    .project-card {
+        padding: 15px;
+    }
+    
+    img {
+        width: 130px;
+        height: 130px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
 }
