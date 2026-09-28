@@ -300,3 +300,40 @@ a:hover {
         font-size: 14px;
     }
 }
+/* ===== Footer ===== */
+.footer {
+    background-color: #004a99;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #e0e0e0;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Mobile এ Footer */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 15px;
+        margin-top: 30px;
+    }
+    
+    .footer p {
+        font-size: 13px;
+    }
+}
