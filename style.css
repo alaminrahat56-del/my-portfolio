@@ -337,3 +337,73 @@ a:hover {
         font-size: 13px;
     }
 }
+/* ===== Mobile Menu Button ===== */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 24px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Mobile এর জন্য */
+@media (max-width: 768px) {
+    
+    /* Menu Button দেখাও */
+    .menu-toggle {
+        display: block;
+    }
+    
+    /* Nav কে লুকাও (আগে hidden) */
+    .navbar nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #004a99;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        width: 100%;
+    }
+    
+    /* যখন menu খোলা */
+    .navbar nav.open {
+        max-height: 400px;
+    }
+    
+    /* Nav list কে column এ সাজাও */
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+    }
+    
+    .navbar nav ul li {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar nav ul li a {
+        display: block;
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    
+    /* Nav Bar এর layout ঠিক করো */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 20px;
+        position: relative;
+    }
+}

@@ -10,9 +10,11 @@
 
     <header class="navbar">
         <div class="logo">Al Amin Rahat</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -28,6 +30,13 @@
         <p>This is my first code.</p>
         <p>I am learning web development.</p>
         <p>My goal is to become a full-stack developer.</p>
+    </section>
+
+    <section id="education">
+         <h2>My Education</h2>
+         <p>SSC-2011</p>
+         <p>Diploma in Engineering-2015</p>
+         <p>BSc-2020</p>
     </section>
 
     <section id="hobbies">
@@ -107,7 +116,7 @@
         <p>📧 Email: <a href="mailto:alaminrahat56@gmail.com">alaminrahat56@gmail.com</a></p>
         <p>💻 GitHub: <a href="https://github.com/alaminrahat56-del" target="_blank">github.com/alaminrahat56-del</a></p>
         <p>📍 Location: Bangladesh</p>
-    </section>
+    </section>  
     <footer class="footer">
         <p>© 2026 Al Amin Rahat</p>
         <p>Made with ❤️ from Bangladesh</p>
@@ -117,7 +126,12 @@
             <a href="#about">Back to Top ↑</a>
         </p>
     </footer>
-
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector('.navbar nav');
+        nav.classList.toggle('open');
+    }
+</script>
 </body>
 </html>
 
